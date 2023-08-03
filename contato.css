@@ -1,0 +1,56 @@
+main{
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+}
+
+.dados-contato{
+    background-color: #202020;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.dados-lista{
+    flex-direction: column;
+    gap: 16px;
+}
+
+iframe{
+    max-width: 100%;
+}
+
+.dados-lista ul{
+    padding-left: 0px;
+}
+
+@media screen and (max-width:700px) {
+    .dados-contato{
+        grid-template-columns: 1fr;
+    }
+    .dados-lista{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+h1:hover{
+    scale:110%;
+}
+
+main img:hover{
+   scale:150%;
+}
+
+main h2:hover{
+   scale:98%;
+}
+
+main p:hover{
+   scale:103%;
+}
+
